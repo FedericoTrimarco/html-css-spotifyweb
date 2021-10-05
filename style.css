@@ -3,6 +3,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 100vh;
+}
+/* UTILITIES */
+
+/* display-flex */
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
 }
 
-/* UTILITIES */
+/*  */
+/* MAIN */
+main{
+    background-color: lightblue;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+/* FOOTER */
+footer{
+    background-color: #282828;
+    padding: 30px 10px;
+}
