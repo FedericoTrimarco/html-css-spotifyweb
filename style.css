@@ -57,12 +57,18 @@ body{
 .no-list-style{
     list-style: none;
 }
-/*  */
-/* MAIN */
-main{
-    background-color: lightblue;
+
+/* button */
+.btn{
+    padding: 10px 40px;
+    color: white;
+    border: 1px solid currentColor;
+    background-color: transparent;
+    border-radius: 20px;
 }
-/* aside */
+/*  */
+
+/* ASIDE */
 aside{
     background-color: #000;
     min-width: 250px;
@@ -76,6 +82,7 @@ aside .logo{
 .logo img{
     width: 100%;
 }
+/* info */
 .aside-info .info-icon,
 .footer-aside .info-icon {
     height: 35px;
@@ -84,26 +91,19 @@ aside .logo{
 .info-icon img{
     height: 100%;
 }
-/* 
-.playlist{
-    background-color: red;
-} */
+/* playlist */
 .playlist .plus{
     background-color: grey;
     padding: 10px;
     font-size: 25px;
     color: black;
 }
-/* 
-.footer-aside{
-    background-color: blue;
-} */
-
+/* footer-aside */
 .footer-aside .info-icon img{
     border-radius: 50%;
     background-color: #808080;
 }
-/* main-container */
+/* MAIN-CONTAINER */
 .main-container{
     background-color: #141922;
     color: white;
