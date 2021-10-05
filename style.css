@@ -15,11 +15,15 @@ body{
     padding-top: 20px;
     padding-left: 20px;
 }
+
 .pl-20px{
     padding-left: 20px;
 }
 .px-20px{
     padding: 0 20px;
+}
+.py-20px{
+    padding: 20px 0;
 }
 /* margin */
 .mb-30px{
@@ -136,7 +140,24 @@ aside .logo{
 .main-contaeiner-nav ul a{
     color: #7d7f84;
 }
-
+/* albums */
+.albums-row{
+    border: 1px solid  purple;
+}
+.album-card{
+    width: calc(100% / 6);
+    background-color: orange;
+}
+.album-img{
+    width: 100%;
+}
+.album-img img{
+    width: 100%;
+}
+.album-title{
+    background-color: blue;
+    text-align: center;
+}
 /* FOOTER */
 footer{
     background-color: #282828;
