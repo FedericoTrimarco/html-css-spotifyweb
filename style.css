@@ -9,6 +9,21 @@ body{
     height: 100vh;
 }
 /* UTILITIES */
+/* margin */
+.mb-30px{
+    margin-bottom: 30px;
+}
+
+.mb-10px{
+    margin-bottom: 10px;
+}
+.ml-10px{
+    margin-left: 10px;
+}
+/* overflow */
+.overflow-Y{
+    overflow-y: auto;
+}
 
 /* display-flex */
 .flex{
@@ -17,39 +32,59 @@ body{
 .flex-col{
     flex-direction: column;
 }
-
+.grow-1{
+    flex-grow: 1;
+}
 /*  */
 /* MAIN */
 main{
     background-color: lightblue;
-    flex-grow: 1;
-    overflow-y: auto;
 }
-
-/* ASIDE */
+/* aside */
 aside{
     background-color: #000;
+    min-width: 250px;
     color: white;
-    width: 200px;
+    padding: 20px;
+    z-index: 1;
 }
-/* MAIN-CONTAINER */
+
+aside .logo{
+    width: 150px;
+}
+.logo img{
+    width: 100%;
+}
+i{
+    font-size: 30px;
+    padding: 0px;
+    background-color: grey;
+    color: black;
+}
+.aside-info .info-icon{
+    width: 30px;
+    align-items: center;
+}
+.info-icon img{
+    width: 100%;
+}
+/* main-container */
 .main-container{
     background-color: #141922;
-    flex-grow: 1;
-    overflow-y: auto;
     color: white;
 }
 .main-contaeiner-content{
     margin-top: 100px;
-    color: white;
+    width: 100%;
 }
 header{
-    background: purple;
+    background: rgba(0, 0, 0, 0.6);
     position: fixed;
-    width: calc(100% - 200px);
-    text-align: end;
-    padding: 30px 10px;
+    width: 100%;
+    text-align: right;
+    padding: 30px 30px;
 }
+
 /* FOOTER */
 footer{
     background-color: #282828;
