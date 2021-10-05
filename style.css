@@ -17,6 +17,9 @@ body{
 .pl-20px{
     padding-left: 20px;
 }
+.px-20px{
+    padding: 0 20px;
+}
 /* margin */
 .mb-30px{
     margin-bottom: 30px;
@@ -25,8 +28,14 @@ body{
 .mb-10px{
     margin-bottom: 10px;
 }
+.mt-10px{
+    margin-top: 10px;
+}
 .ml-10px{
     margin-left: 10px;
+}
+.mr-10px{
+    margin-right: 10px;
 }
 /* overflow */
 .overflow-Y{
@@ -42,6 +51,11 @@ body{
 }
 .grow-1{
     flex-grow: 1;
+}
+
+/* list */
+.no-list-style{
+    list-style: none;
 }
 /*  */
 /* MAIN */
@@ -62,13 +76,32 @@ aside .logo{
 .logo img{
     width: 100%;
 }
-.aside-info .info-icon{
-    border: 1px solid white;
-    height: 40px;
+.aside-info .info-icon,
+.footer-aside .info-icon {
+    height: 35px;
     align-items: center;
 }
 .info-icon img{
     height: 100%;
+}
+/* 
+.playlist{
+    background-color: red;
+} */
+.playlist .plus{
+    background-color: grey;
+    padding: 10px;
+    font-size: 25px;
+    color: black;
+}
+/* 
+.footer-aside{
+    background-color: blue;
+} */
+
+.footer-aside .info-icon img{
+    border-radius: 50%;
+    background-color: #808080;
 }
 /* main-container */
 .main-container{
