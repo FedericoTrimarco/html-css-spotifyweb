@@ -181,7 +181,18 @@ footer{
     background-color: #282828;
     justify-content: space-between;
 }
-footer .content{
+footer .content-left,
+footer .content-center,
+footer .content-right{
     background-color: green;
-    padding: 30px 10px;
+    padding: 25px 15px;
+}
+footer .content-left{
+    align-items: center;
+}
+footer .cont-left-img{
+    width: 50px;
+}
+.cont-left-img img{
+    width: 100%;
 }
