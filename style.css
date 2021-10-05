@@ -26,15 +26,29 @@ main{
     overflow-y: auto;
 }
 
+/* ASIDE */
 aside{
     background-color: #000;
     color: white;
+    width: 200px;
 }
+/* MAIN-CONTAINER */
 .main-container{
     background-color: #141922;
     flex-grow: 1;
     overflow-y: auto;
     color: white;
+}
+.main-contaeiner-content{
+    margin-top: 100px;
+    color: white;
+}
+header{
+    background: purple;
+    position: fixed;
+    width: calc(100% - 200px);
+    text-align: end;
+    padding: 30px 10px;
 }
 /* FOOTER */
 footer{
