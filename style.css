@@ -25,6 +25,17 @@ main{
     flex-grow: 1;
     overflow-y: auto;
 }
+
+aside{
+    background-color: #000;
+    color: white;
+}
+.main-container{
+    background-color: #141922;
+    flex-grow: 1;
+    overflow-y: auto;
+    color: white;
+}
 /* FOOTER */
 footer{
     background-color: #282828;
