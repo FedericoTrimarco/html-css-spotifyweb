@@ -10,6 +10,17 @@ body{
     background-color: #141922;
 }
 /* UTILITIES */
+/* color */
+.cl-white{
+    color: white;
+}
+.cl-grey{
+    color: #7d7f84;
+}
+/* filter */
+.filt-grey{
+    filter: invert(50%);
+}
 /* padding */
 .p-tl-20px{
     padding-top: 20px;
@@ -24,6 +35,9 @@ body{
 }
 .py-20px{
     padding: 20px 0;
+}
+.pt-30px{
+    padding-top: 30px;
 }
 /* margin */
 .mb-30px{
@@ -91,7 +105,7 @@ body{
 /*  */
 /* HEADER */
 header{
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
     position: fixed;
     width: 100%;
     text-align: right;
@@ -102,7 +116,6 @@ header{
 aside{
     background-color: #000;
     min-width: 250px;
-    color: white;
     z-index: 1;
 }
 
@@ -123,7 +136,7 @@ aside .logo{
 }
 /* playlist */
 .add-playlist .plus{
-    background-color: grey;
+    background-color: #a3a3a3;
     padding: 10px;
     font-size: 25px;
     color: black;
@@ -136,7 +149,6 @@ aside .logo{
 /* MAIN-CONTAINER */
 .main-container{
     border: 1px solid blue;
-    color: white;
     padding-top: 120px;
 }
 /* main-cont-nav */
@@ -144,9 +156,7 @@ aside .logo{
     border: 1px solid red;
     justify-content: center;
 }
-.main-contaeiner-nav ul a{
-    color: #7d7f84;
-}
+
 /* albums */
 .albums-row{
     border: 1px solid  purple;
@@ -165,9 +175,9 @@ aside .logo{
     border: 1px solid blue;
     text-align: center;
 }
-.main-container span{
-    color: #727479;
-}
+/* .main-container span{
+    color: #7d7f84;
+} */
 /* FOOTER */
 footer{
     background-color: #282828;
