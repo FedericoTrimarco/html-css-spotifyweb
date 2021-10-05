@@ -175,11 +175,13 @@ aside .logo{
     border: 1px solid blue;
     text-align: center;
 }
-/* .main-container span{
-    color: #7d7f84;
-} */
+
 /* FOOTER */
 footer{
     background-color: #282828;
+    justify-content: space-between;
+}
+footer .content{
+    background-color: green;
     padding: 30px 10px;
 }
