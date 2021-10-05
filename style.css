@@ -7,6 +7,7 @@
 }
 body{
     height: 100vh;
+    background-color: #141922;
 }
 /* UTILITIES */
 /* padding */
@@ -31,11 +32,17 @@ body{
 .mt-10px{
     margin-top: 10px;
 }
+.mt-50px{
+    margin-top: 50px;
+}
 .ml-10px{
     margin-left: 10px;
 }
 .mr-10px{
     margin-right: 10px;
+}
+.mr-20px{
+    margin-right: 20px;
 }
 /* overflow */
 .overflow-Y{
@@ -66,7 +73,19 @@ body{
     background-color: transparent;
     border-radius: 20px;
 }
+/* text-decoration */
+.txt-dec-none{
+    text-decoration: none;
+}
 /*  */
+/* HEADER */
+header{
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    padding: 30px 30px;
+}
 
 /* ASIDE */
 aside{
@@ -105,19 +124,17 @@ aside .logo{
 }
 /* MAIN-CONTAINER */
 .main-container{
-    background-color: #141922;
+    border: 1px solid blue;
     color: white;
+    margin-top: 120px;
 }
-.main-contaeiner-content{
-    margin-top: 100px;
-    width: 100%;
+/* main-cont-nav */
+.main-contaeiner-nav{
+    border: 1px solid red;
+    justify-content: center;
 }
-header{
-    background: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    width: 100%;
-    text-align: right;
-    padding: 30px 30px;
+.main-contaeiner-nav ul a{
+    color: #7d7f84;
 }
 
 /* FOOTER */
