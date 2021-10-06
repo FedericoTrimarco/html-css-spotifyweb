@@ -59,6 +59,12 @@ body{
 .ml-10px{
     margin-left: 10px;
 }
+.ml-20px{
+    margin-left: 20px;
+}
+.ml-30px{
+    margin-left: 30px;
+}
 .mr-10px{
     margin-right: 10px;
 }
@@ -181,18 +187,50 @@ footer{
     background-color: #282828;
     justify-content: space-between;
 }
-footer .content-left,
-footer .content-center,
-footer .content-right{
+footer .content {
     background-color: green;
-    padding: 25px 15px;
+    padding: 10px 10px;
 }
-footer .content-left{
+/* left */
+footer .content.left{
+    width: 25%;
     align-items: center;
 }
-footer .cont-left-img{
+
+.cont-left-img img{
     width: 50px;
 }
-.cont-left-img img{
-    width: 100%;
+/* center */
+footer .content.center{
+    width: 80%;
+    align-items: center;
+}
+.cont-cent-top{
+    font-size: 35px;
+}
+.cont-cent-bottom{
+    width: 50%;
+    align-items: center;
+}
+.progress{
+  width: 100%;
+  height: 5px;
+  background: #585858;
+  border-radius: 10px;
+}
+  
+.progress-bar{
+    display: block;
+    width: 7%;
+    height: 100%;
+    background: #a3a3a3;
+}
+/* right */
+footer .content.right{
+    width: 25%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.content.right .progress{
+    width: 50%;
 }
