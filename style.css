@@ -119,6 +119,7 @@ i{
     background-color: transparent;
     border-radius: 20px;
     font-size: 1em;
+    transition: font-size .3s;
 }
 /* text-decoration */
 .txt-dec-none{
@@ -265,7 +266,7 @@ footer .content.right{
     justify-content: flex-end;
 }
 .content.right .progress{
-    width: 50%;
+    width: 30%;
 }
 
 /* HOVER-ASIDE */
@@ -381,7 +382,9 @@ RESPONSIVE
     .album-card {
         width: calc(100% / 2 - 20px);
     }
-
+    footer .content.left{
+        margin-right: 20px;
+    }
     footer .cont-left-text span{
         font-size: 12px;
     }
@@ -403,23 +406,14 @@ RESPONSIVE
         font-size: 20px;
     }
     
-    aside .logo{
-        display: none;
-    }
-    aside span{
-        display: none;
-    }
-
-    aside .playlist{
-        display: none;
-    }
-
-    aside .list-playlist ul{
-        display: none;
-    }
+    aside .logo,
+    aside span,
+    aside .playlist,
+    aside .list-playlist ul,
     aside hr{
         display: none;
     }
+
     aside .logo-small{
         display: block;
         width: 60px;
