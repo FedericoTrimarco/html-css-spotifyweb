@@ -9,7 +9,14 @@ body{
     height: 100vh;
     background-color: #141922;
 }
+i{
+    cursor: pointer;
+}
 /* UTILITIES */
+/* cursor */
+.curs-point{
+    cursor: pointer;
+}
 /* color */
 .cl-white{
     color: white;
@@ -29,6 +36,9 @@ body{
 
 .pl-20px{
     padding-left: 20px;
+}
+.pr-20px{
+    padding-right: 20px;
 }
 .px-20px{
     padding: 0 20px;
@@ -97,7 +107,10 @@ body{
 .no-list-style{
     list-style: none;
 }
-
+/* display */
+.disp-none{
+    display: none;
+}
 /* button */
 .btn{
     padding: 10px 40px;
@@ -148,7 +161,6 @@ aside .logo{
 .footer-aside .info-icon {
     height: 35px;
     align-items: center;
-    cursor: pointer;
 }
 .aside-info .info-icon{
     border-left: 5px solid transparent;
@@ -184,10 +196,11 @@ aside .logo{
 
 /* albums */
 .albums-row{
+    flex-wrap: wrap;
     /* border: 1px solid  purple; */
 }
 .album-card{
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 20px);
     /* border: 1px solid orange; */
 }
 .album-img{
@@ -205,14 +218,15 @@ aside .logo{
 footer{
     background-color: #282828;
     justify-content: space-between;
+    padding: 10px;
 }
 footer .content {
     /* border: 1px solid green; */
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
+    width: calc(100% / 3);
 }
 /* left */
 footer .content.left{
-    width: 25%;
     align-items: center;
 }
 
@@ -221,7 +235,6 @@ footer .content.left{
 }
 /* center */
 footer .content.center{
-    width: 80%;
     align-items: center;
 }
 .cont-cent-top{
@@ -229,7 +242,7 @@ footer .content.center{
     align-items: center;
 }
 .cont-cent-bottom{
-    width: 50%;
+    width: 100%;
     align-items: center;
 }
 .progress{
@@ -248,7 +261,6 @@ footer .content.center{
 }
 /* right */
 footer .content.right{
-    width: 25%;
     align-items: center;
     justify-content: flex-end;
 }
@@ -280,7 +292,6 @@ footer .content.right{
 /* HOVER-HEADER */
 header .btn:hover{
     font-size: 1.1em;
-    cursor: pointer;
 }
 /* HOVER-MAIN-CONTAINER */
 /* nav */
@@ -302,6 +313,7 @@ header .btn:hover{
 /* albums */
 .album-img{
     position:relative;
+    cursor: pointer;
 }
 .albums-row .play-icon{
     display: none;
@@ -322,11 +334,9 @@ header .btn:hover{
 footer .cont-left-text span:hover{
     color: white;
     border-bottom: 1px solid currentColor;
-    cursor: pointer;
 }
 footer .cont-left-txt-icon i:hover{
     color: white;
-    cursor: pointer;
 }
 /* center */
 .progress-circle{
@@ -337,4 +347,97 @@ footer .progress:hover .progress-bar{
 }
 footer .progress:hover .progress-circle{
     display: block;
+}
+.cont-cent-top .play-icon:hover{
+    transform: scale(1.2);
+}
+
+/**********
+RESPONSIVE 
+***********/
+/* desktop */
+@media  screen and (max-width: 1440px) {
+    .album-card .album-title h2{
+        font-size: 15px;
+    }
+}
+/* tablet */
+@media  screen and (max-width: 878px) {
+    .album-card {
+        width: calc(100% / 4 - 20px);
+    }
+    .album-card .album-title span{
+        font-size: 10px;
+    }
+    .main-contaeiner-nav ul{
+        flex-wrap: wrap;
+        font-size: 15px;
+        justify-content: center;
+        line-height: 60px;
+    }
+}
+/* small-tablet */
+@media  screen and (max-width: 639px) {
+    .album-card {
+        width: calc(100% / 2 - 20px);
+    }
+
+    footer .cont-left-text span{
+        font-size: 12px;
+    }
+
+    footer .cont-left-txt-icon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .cont-left-txt-icon .file{
+        padding-right: 5px;
+        padding-top: 5px;
+    }
+}
+/* phone */
+@media  screen and (max-width: 560px){
+    .main-container h1{
+        font-size: 20px;
+    }
+    
+    aside .logo{
+        display: none;
+    }
+    aside span{
+        display: none;
+    }
+
+    aside .playlist{
+        display: none;
+    }
+
+    aside .list-playlist ul{
+        display: none;
+    }
+    aside hr{
+        display: none;
+    }
+    aside .logo-small{
+        display: block;
+        width: 60px;
+        margin-left: 5px;
+    }
+    .footer-aside .add-playlist i{
+        margin-left: 5px;
+    }
+    aside{
+        min-width: max-content
+    }
+    .content.left{
+        margin-right: 10px;
+    }
+    .content.right .icon-right{
+        margin-left: 3px;
+    }
+    .main-contaeiner-nav ul {
+        font-size: 14px;
+    }
 }
