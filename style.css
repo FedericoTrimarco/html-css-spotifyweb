@@ -379,6 +379,9 @@ RESPONSIVE
 }
 /* small-tablet */
 @media  screen and (max-width: 639px) {
+    .main-container h1{
+        font-size: 30px;
+    }
     .album-card {
         width: calc(100% / 2 - 20px);
     }
