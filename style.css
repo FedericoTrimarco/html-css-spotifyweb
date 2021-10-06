@@ -79,7 +79,6 @@ body{
 .overflow-Y{
     overflow-y: auto;
 }
-
 /* display-flex */
 .flex{
     display: flex;
@@ -90,7 +89,10 @@ body{
 .grow-1{
     flex-grow: 1;
 }
-
+/* font-size */
+.fnts-35px{
+    font-size: 35px;
+}
 /* list */
 .no-list-style{
     list-style: none;
@@ -173,9 +175,9 @@ aside .logo{
 }
 
 /* albums */
-.albums-row{
-    /* border: 1px solid  purple; */
-}
+/* .albums-row{
+    border: 1px solid  purple;
+} */
 .album-card{
     width: calc(100% / 6);
     /* border: 1px solid orange; */
@@ -268,4 +270,21 @@ footer .content.right{
 /* HOVER-HEADER */
 header .btn:hover{
     font-size: 1.1em;
+    cursor: pointer;
+}
+/* HOVER-MAIN-CONTAINER */
+/* nav */
+.main-contaeiner-nav li::after {
+    content: '';
+    width: 40px;
+    margin: auto;
+    height: 3px;
+    background-color: transparent;
+}
+.main-contaeiner-nav li:hover a{
+    color: white;
+}
+.main-contaeiner-nav li:hover::after{
+    display: block;
+    background-color: #9be42a;
 }
