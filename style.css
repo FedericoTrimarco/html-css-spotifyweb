@@ -136,11 +136,18 @@ aside .logo{
 .footer-aside .info-icon {
     height: 35px;
     align-items: center;
+    cursor: pointer;
+}
+.aside-info .info-icon{
+    border-left: 5px solid transparent;
 }
 .info-icon img{
     height: 100%;
 }
 /* playlist */
+.add-playlist{
+    cursor: pointer;
+}
 .add-playlist .plus{
     background-color: #a3a3a3;
     padding: 10px;
@@ -154,22 +161,22 @@ aside .logo{
 }
 /* MAIN-CONTAINER */
 .main-container{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     padding-top: 120px;
 }
 /* main-cont-nav */
 .main-contaeiner-nav{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: center;
 }
 
 /* albums */
 .albums-row{
-    border: 1px solid  purple;
+    /* border: 1px solid  purple; */
 }
 .album-card{
     width: calc(100% / 6);
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
 }
 .album-img{
     width: 100%;
@@ -178,7 +185,7 @@ aside .logo{
     width: 100%;
 }
 .album-title{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     text-align: center;
 }
 
@@ -188,7 +195,7 @@ footer{
     justify-content: space-between;
 }
 footer .content {
-    background-color: green;
+    /* background-color: green; */
     padding: 10px 10px;
 }
 /* left */
@@ -233,4 +240,25 @@ footer .content.right{
 }
 .content.right .progress{
     width: 50%;
+}
+
+/* HOVER-ASIDE */
+/* nav */
+.aside-info .info-icon:hover{
+    border-color: #9be42a;
+    color: white;
+}
+.aside-info .info-icon:hover img{
+    filter: invert(0);
+}
+/* playlist */
+.list-playlist li:hover{
+    color:white;
+    cursor: pointer;
+}
+.add-playlist:hover .plus{
+    background-color: white;
+}
+.add-playlist:hover span{
+    color: white;
 }
