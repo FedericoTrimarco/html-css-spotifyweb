@@ -316,14 +316,11 @@ header .btn:hover{
     position:relative;
     cursor: pointer;
 }
+.album-img img:hover{
+    filter: opacity(50%);
+}
 .albums-row .play-icon{
     display: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-
-}
-.albums-row .play-icon i{
     font-size: 80px;
 }
 .albums-row .album-img:hover .play-icon{
