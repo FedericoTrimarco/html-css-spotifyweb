@@ -318,15 +318,22 @@ header .btn:hover{
     position:relative;
     cursor: pointer;
 }
+.album-img img{
+    transition: filter 0.3s;
+}
 .album-img img:hover{
     filter: opacity(50%);
 }
 .albums-row .play-icon{
     display: none;
     font-size: 80px;
+    transition: color 0.5s;
 }
 .albums-row .album-img:hover .play-icon{
     display: block;
+}
+.albums-row .play-icon:hover{
+    color: #9be42a;
 }
 
 /* HOVER FOOTER */
