@@ -415,7 +415,9 @@ RESPONSIVE
     aside hr{
         display: none;
     }
-
+    .album-card {
+        margin-bottom: 10px;
+    }
     aside .logo-small{
         display: block;
         width: 60px;
